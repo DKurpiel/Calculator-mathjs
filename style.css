@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+input {
+    display: block;
+    width: 18rem;
+    margin: 0.1rem;
+    border: 1px solid silver;
+    font-size: 2rem;
+    text-align: right;
+}
+
+.numbers button,
+.operators button {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    margin: 0.1rem;
+    border: 2px solid silver;
+    outline-width: 0;
+}
+
+button.big-button {
+    height: 6.1rem;
+}
+
+button.clear {
+    background-color: rgb(232, 156, 126);
+}
+
+button.result {
+    background-color: rgb(130, 195, 236);
+}
+
+button:hover {
+    border-color: gray;
+}
+
+button:active {
+    font-weight: bold;
+    background-color: silver;
+}
+
+.left-panel,
+.right-panel {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0.3rem;
+}
